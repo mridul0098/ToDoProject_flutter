@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todoproject/Style.dart';
 class todopageview extends StatefulWidget {
   const todopageview({Key? key}) : super(key: key);
 
@@ -21,11 +22,15 @@ class _todopageviewState extends State<todopageview> {
                 child: Row(
                   children: [
                     Expanded(
-                      flex:80,
-                        child: TextFormField()),
+                      flex:70,
+                        child: TextFormField(
+                          decoration: AppInputDecoration("name"),
+                        )),
                    Expanded(
-                     flex: 20,
-                       child: ElevatedButton(onPressed: (){}, child: Text("click hear")))
+                     flex: 30,
+                       child: ElevatedButton(
+                           style: AppButtonStyle(),
+                           onPressed: (){}, child: Text("click hear")))
                   ],
                 ),),
             Expanded(

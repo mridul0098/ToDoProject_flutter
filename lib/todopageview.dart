@@ -53,7 +53,7 @@ MyinputOnChange(content){
                              AddItem();
                            },
                            style: AppButtonStyle(),
-                          child: Text("click hear")))
+                          child: Text("Click Hear")))
                   ],
                 ),),
             Expanded(

@@ -21,7 +21,11 @@ MyinputOnChange(content){
     ToDoList.add({"item":item});
   });
  }
-
+ RemoveAt(index){
+  setState(() {
+    ToDoList.removeAt(index);
+  });
+ }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -69,7 +73,7 @@ MyinputOnChange(content){
                                 flex: 30,
                                 child: TextButton(
                                     style: AppButtonStyle(),
-                                    onPressed: (){}, child: Icon(Icons.delete)))
+                                    onPressed: (){RemoveAt(index);}, child: Icon(Icons.delete)))
                           ],
                         ),
                       );

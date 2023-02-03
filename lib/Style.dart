@@ -10,8 +10,5 @@ InputDecoration AppInputDecoration(lable){
 ButtonStyle AppButtonStyle(){
   return ElevatedButton.styleFrom(
     padding:EdgeInsets.all(25),
-
-
   );
-
 }
